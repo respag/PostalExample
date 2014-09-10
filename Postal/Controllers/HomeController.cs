@@ -15,6 +15,7 @@ namespace Postal_Example.Controllers
             dynamic email = new Email("Example");
             email.To = "respag@hotmail.com, rspagnuolo@ultimus.com, panamap@outlook.com";
             email.FunnyLink = "http://blog.respag.net";
+            email.Fecha = @DateTime.Now.ToString(@"dddd, dd \de MMMM \de yyyyy");
             email.Send();
             return View();
         }
